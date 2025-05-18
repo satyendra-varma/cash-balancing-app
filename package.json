@@ -7,7 +7,10 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "homepage": "https://github.com/satyendra-varma/cash-balancing-app",
+=======
+>>>>>>> parent of 14cc75f (publish build)
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^6.22.3",
@@ -17,8 +20,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
