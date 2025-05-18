@@ -1,0 +1,118 @@
+/* index.css */
+
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --background-color: #f0f2f5;
+  --form-bg: #ffffff;
+  --input-border: #ccc;
+  --text-color: #333;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Main container for every page */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Form box */
+form {
+  background-color: var(--form-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px var(--shadow);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Form elements */
+input,
+select,
+textarea {
+  padding: 12px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 4px var(--primary-color);
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+p {
+  text-align: center;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .page-container {
+    padding: 10px;
+  }
+
+  form {
+    padding: 20px;
+    width: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 12px;
+  }
+}

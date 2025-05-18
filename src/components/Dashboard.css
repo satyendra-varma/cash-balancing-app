@@ -1,0 +1,87 @@
+/* Dashboard.css */
+
+.page-container {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: #f4f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.page-container h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+.form-link-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.primary-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.primary-button:hover {
+  background-color: #005fcc;
+}
+
+.cash-summary {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cash-summary h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.cash-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cash-summary li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.cash-summary li:last-child {
+  border-bottom: none;
+}
+
+.no-data {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Responsive Enhancements */
+@media (min-width: 480px) {
+  .primary-button {
+    font-size: 1.1rem;
+  }
+
+  .cash-summary li {
+    font-size: 1rem;
+  }
+}

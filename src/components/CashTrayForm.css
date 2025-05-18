@@ -1,0 +1,65 @@
+/* CashTrayForm.css */
+
+.page-container {
+  max-width: 100%;
+  padding: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9fafc;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  padding: 0.4rem 0.2rem;
+}
+
+label {
+  flex: 1.2;
+  font-size: 0.95rem;
+  padding-right: 0.5rem;
+  white-space: nowrap;
+}
+
+input[type="number"] {
+  flex: 1;
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: right;
+  min-width: 0;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 1.4rem;
+  font-size: 1.1rem;
+  color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fcc;
+}
